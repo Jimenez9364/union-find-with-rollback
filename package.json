@@ -1,0 +1,17 @@
+{
+  "name": "union-find-with-rollback",
+  "version": "0.1.0",
+  "description": "Union-find with rollback of the most recent merge in last-in-first-out order.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "dependencies": {}
+}
