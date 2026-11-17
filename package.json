@@ -1,6 +1,6 @@
 {
   "name": "union-find-with-rollback",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Union-find with rollback of the most recent merge in last-in-first-out order.",
   "type": "module",
   "main": "src/index.js",
