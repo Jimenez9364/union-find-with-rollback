@@ -23,3 +23,10 @@ Most union-find implementations use path compression, which rewrites parent poin
 ## What to watch for
 
 `rollback` throws if there is no union left to undo. A `union` that returns `false` (the two elements were already connected) pushes nothing, so it does not change what a subsequent `rollback` will undo. Indices are integers in `[0, size)`; anything else throws a `RangeError`.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
